@@ -1,0 +1,8 @@
+.section-card { height: 100%; padding: 65px 100px; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; gap: 28px; background: radial-gradient(ellipse at 50% 0, #1b5360, var(--color-panel) 75%); border-top: 5px solid var(--color-accent); }
+.section-label { font-size: 26px; font-weight: 700; letter-spacing: 5px; color: var(--color-accent); }
+.section-card h2 { font-size: 96px; line-height: 1.12; margin: 0; overflow-wrap: anywhere; }
+.section-card p { font-size: 34px; line-height: 1.4; color: var(--color-muted); margin: 0; }
+body[data-layout="split"] .section-card { display: grid; grid-template-columns: minmax(280px, .7fr) minmax(0, 1.3fr); grid-template-rows: auto auto; align-content: center; align-items: center; gap: 32px 80px; text-align: left; background: linear-gradient(110deg, #184956, var(--color-panel) 80%); }
+body[data-layout="split"] .section-label { grid-column: 1; grid-row: 1 / span 2; align-self: stretch; display: flex; align-items: center; padding-right: 40px; border-right: 2px solid #355d69; font-size: 40px; line-height: 1.5; letter-spacing: 3px; }
+body[data-layout="split"] .section-card h2 { grid-column: 2; grid-row: 1; font-size: 88px; }
+body[data-layout="split"] .section-card p { grid-column: 2; grid-row: 2; }

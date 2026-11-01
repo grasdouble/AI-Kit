@@ -1,0 +1,8 @@
+.title-card { height: 100%; padding: 70px 90px; display: flex; align-items: center; justify-content: center; text-align: center; flex-direction: column; }
+.title-card h2 { font-size: 92px; line-height: 1.12; margin: 0 0 35px; overflow-wrap: anywhere; }
+.title-card p { font-size: 34px; line-height: 1.4; color: var(--color-muted); margin: 0; }
+.link { margin-top: 35px !important; font-size: 25px !important; }
+body[data-layout="left"] .title-card { align-items: flex-start; text-align: left; padding: 90px 110px; background: linear-gradient(120deg, #143b49, var(--color-panel) 75%); }
+body[data-layout="left"] .title-card::before { content: ""; width: 110px; height: 6px; margin-bottom: 55px; background: var(--color-accent); }
+body[data-layout="left"] .title-card h2 { font-size: 104px; max-width: 1400px; }
+body[data-layout="left"] .title-card p { max-width: 1250px; }

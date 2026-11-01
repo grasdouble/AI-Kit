@@ -1,0 +1,25 @@
+:root {
+  --color-text: #edf6fa;
+  --color-muted: #b6cbd7;
+  --color-accent: #79e9be;
+  --color-panel: #0c1d2b;
+  --color-surface: #142d3c;
+  --color-border: #355363;
+  --color-command: #8bf2c8;
+  --color-code: #d4e3ec;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; width: 1920px; height: 1080px; overflow: hidden; }
+body { background: radial-gradient(ellipse at 100% 0, #164450, #08131e 60%); color: var(--color-text); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+header { position: absolute; top: 38px; left: 70px; right: 70px; }
+#chapter { font-size: 18px; letter-spacing: 3px; font-weight: 700; color: var(--color-accent); }
+h1 { font-size: 50px; margin: 14px 0 10px; }
+#subtitle { font-size: 24px; color: var(--color-muted); margin: 0; }
+#stage { position: absolute; top: 210px; left: 70px; width: 1780px; height: 700px; border: 1px solid var(--color-border); border-radius: 18px; background: var(--color-panel); overflow: hidden; }
+body:is([data-visual="title"], [data-visual="section"], [data-visual="thanks"]) > header { display: none; }
+body:is([data-visual="title"], [data-visual="section"], [data-visual="thanks"]) #stage { top: 38px; height: 872px; }
+.notice { font-size: 19px; color: var(--color-muted); line-height: 1.5; }
+#captions { position: absolute; left: 175px; right: 175px; top: 930px; height: 86px; display: flex; align-items: center; justify-content: center; text-align: center; font-size: 30px; line-height: 1.35; }
+footer { position: absolute; left: 70px; right: 70px; bottom: 24px; display: flex; justify-content: space-between; color: #91aebf; font-size: 16px; }
+.scene-transition { position: fixed; top: 0; left: 0; width: 100vw; height: var(--transition-height); overflow: hidden; z-index: 1000; pointer-events: none; }
+.scene-transition img { display: block; width: 100vw; height: 100vh; object-fit: fill; }

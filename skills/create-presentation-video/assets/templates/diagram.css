@@ -1,0 +1,6 @@
+.diagram-scene { display: grid; width: 100%; height: 100%; padding: 40px; gap: 36px; }
+.diagram-canvas { min-width: 0; min-height: 0; }
+.diagram-image { display: block; width: 100%; height: 100%; object-fit: contain; }
+.diagram-notes { display: flex; flex-direction: column; justify-content: center; gap: 24px; min-width: 0; min-height: 0; padding-left: 30px; border-left: 1px solid var(--color-border); }
+.diagram-notes p { margin: 0; font-size: 30px; line-height: 1.4; color: var(--color-text); }
+body[data-layout="split"] .diagram-scene { grid-template-columns: minmax(0, 1.9fr) minmax(0, 1fr); }

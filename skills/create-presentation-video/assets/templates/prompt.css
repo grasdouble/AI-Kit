@@ -1,0 +1,6 @@
+.prompt { height: 100%; padding: 65px; }
+blockquote { font-size: 38px; line-height: 1.5; margin: 25px 0; }
+body[data-layout="split"] .prompt { display: grid; grid-template-columns: minmax(0, 1.6fr) minmax(260px, .8fr); grid-template-rows: auto 1fr; gap: 25px 60px; }
+body[data-layout="split"] .prompt > .notice:first-child { grid-column: 1; grid-row: 1; }
+body[data-layout="split"] .prompt blockquote { grid-column: 1; grid-row: 2; align-self: center; font-size: 42px; }
+body[data-layout="split"] .prompt > .notice:last-child { grid-column: 2; grid-row: 1 / span 2; align-self: center; padding-left: 40px; border-left: 3px solid var(--color-accent); font-size: 28px; line-height: 1.6; }

@@ -1,0 +1,49 @@
+{
+  "title": "Example project",
+  "outputName": "example-project",
+  "language": "en",
+  "voice": "Example voice",
+  "wordsPerMinute": 165,
+  "narrationDirection": "Enthusiastic, natural, and professional.",
+  "music": {
+    "enabled": true,
+    "beatsPerMinute": 104,
+    "volumeDb": -16
+  },
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "scenes": [
+    {
+      "id": "title",
+      "chapter": "INTRODUCTION",
+      "title": "Example project",
+      "subtitle": "A reusable presentation fixture.",
+      "keyMessage": "Introduce the project.",
+      "narration": "Welcome to this example project.",
+      "visual": "title",
+      "minimumSeconds": 8
+    },
+    {
+      "id": "purpose",
+      "chapter": "PURPOSE",
+      "title": "Why it exists.",
+      "subtitle": "One clear message.",
+      "keyMessage": "Explain the purpose.",
+      "narration": "The next scene explains the purpose.",
+      "visual": "slide",
+      "points": ["A verified project fact"],
+      "minimumSeconds": 12
+    },
+    {
+      "id": "thanks",
+      "chapter": "THANK YOU",
+      "title": "Thank you for watching.",
+      "subtitle": "Example project.",
+      "keyMessage": "Thank the audience.",
+      "narration": "Thank you for watching.",
+      "visual": "thanks",
+      "minimumSeconds": 5
+    }
+  ]
+}

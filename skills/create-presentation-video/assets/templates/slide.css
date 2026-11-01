@@ -1,0 +1,8 @@
+.points { height: 100%; padding: 48px 75px; display: grid; align-content: center; gap: 28px; }
+.point { font-size: 38px; line-height: 1.35; padding: 22px 30px; border-left: 3px solid var(--color-accent); background: var(--color-surface); }
+body[data-layout="cards"] .points { grid-template-columns: repeat(auto-fit, minmax(420px, 1fr)); align-content: stretch; grid-auto-rows: 1fr; gap: 24px; padding: 48px; counter-reset: point; }
+body[data-layout="cards"] .point { display: flex; flex-direction: column; justify-content: center; border-left: 0; border-top: 3px solid var(--color-accent); border-radius: 12px; padding: 36px; font-size: 34px; counter-increment: point; }
+body[data-layout="cards"] .point::before { content: counter(point, decimal-leading-zero); color: var(--color-accent); font-size: 24px; letter-spacing: 3px; margin-bottom: 35px; }
+body[data-layout="split"] .points:has(> .point:nth-child(2)) { display: flex; flex-flow: column wrap; align-content: stretch; justify-content: center; gap: 24px; padding: 48px; }
+body[data-layout="split"] .points:has(> .point:nth-child(2)) .point { flex: 1 1 0; width: calc((100% - 24px) / 2); display: flex; align-items: center; font-size: 34px; }
+body[data-layout="split"] .points:has(> .point:nth-child(2)) .point:first-child { flex: 0 0 100%; font-size: 44px; background: linear-gradient(145deg, #1c4b58, var(--color-surface)); }
